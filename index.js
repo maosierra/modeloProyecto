@@ -7,6 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
+app.use('/api/usuarios', require('./routes/usuarios'));
 
 // Escuchar puerto
 app.listen(3000, () => {
